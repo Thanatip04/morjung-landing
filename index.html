@@ -11,11 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <style>body { box-sizing: border-box; }</style>
-
     <!-- Platform SDKs (KEEP UNCHANGED) -->
-    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
-    <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+    <!-- <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+    <script src="/_sdk/element_sdk.js" type="text/javascript"></script> -->
 </head>
 
 <body>
@@ -23,7 +21,7 @@
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <!-- Logo Area -->
-            <div class="flex items-center gap-2">
+            <div class="flex it ems-center gap-2">
                 <div class="w-8 h-8 bg-gradient-to-br from-amber-400 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
                     <i data-lucide="flame" style="width: 18px; height: 18px; color: white;"></i>
                 </div>
@@ -39,7 +37,7 @@
 
             <!-- Right Side: Mini CTA -->
             <div>
-                <a href="#cta" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full text-md font-bold transition-all hover:scale-105 inline-block">
+                <a href="#cta" class="bg-teal-600 hover:bg-orange-600 text-white px-5 py-2 rounded-full text-md font-bold transition-all hover:scale-105 inline-block">
                     ลองใช้ Demo
                 </a>
             </div>
@@ -253,7 +251,7 @@
                     <a href="https://morjung-production.up.railway.app" 
                     id="demoButton"
                     target="_parent" 
-                    class="inline-block bg-gradient-to-r from-teal-500 to-teal-600 text-white px-10 py-4 rounded-xl font-bold text-xl hover:scale-105 transition-transform shadow-lg shadow-teal-900/20">
+                    class="inline-block bg-gradient-to-r from-teal-600 to-teal-700 text-white px-10 py-4 rounded-xl font-bold text-xl hover:scale-105 transition-transform shadow-lg shadow-teal-900/20">
                         <!-- เข้าสู่หน้า Demo ตอนนี้ -->ลองสัมผัสบรรยากาศ Morjung (Alpha Version)
                     </a>
                 </div>
@@ -273,12 +271,15 @@
         <footer class="relative px-6 py-8 border-t border-white/10 text-center text-gray-400 text-sm">
             <p class="mb-4">© 2026 Morjung. All rights reserved.</p>
             <div class="flex justify-center gap-6">
-                <a href="#" class="hover:text-white transition">Privacy</a> 
+                <a href="./Privacy/index.html" class="hover:text-white transition">Privacy</a> 
                 <a href="#" class="hover:text-white transition">Terms</a> 
                 <a href="#" class="hover:text-white transition">Contact</a>
             </div>
         </footer>
     </div>
     <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

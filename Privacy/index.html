@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>นโยบายความเป็นส่วนตัว - Morjung</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Prompt", sans-serif;
+      }
+      html {
+        scroll-behavior: smooth !important;
+        /* ปรับเพิ่ม padding เพื่อไม่ให้เวลาคลิก Link สารบัญแล้วหัวข้อจมลงไปใต้จอ */
+        scroll-padding-top: 110px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <div
+      class="relative bg-slate-900 text-white min-h-[300px] sm:min-h-[400px] bg-cover bg-center bg-no-repeat m-4 rounded-2xl overflow-hidden shadow-2xl"
+    >
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 pointer-events-none"
+        style="background-image: url(&quot;../assets/hero-bg-1.png&quot;)"
+      ></div>
+
+      <nav class="relative px-6 py-4 w-full z-10">
+        <div
+          class="flex items-center justify-between max-w-7xl mx-auto px-4 py-2 border border-white/20 rounded-xl bg-white/10 shadow-sm backdrop-blur-md"
+        >
+          <div class="flex gap-2 items-center">
+            <div class="bg-cyan-600 w-8 h-8 rounded-lg"></div>
+            <span class="text-xl font-bold text-white">Morjung</span>
+          </div>
+
+          <div class="hidden md:flex items-center gap-8 font-medium text-white">
+            <a
+              href="#"
+              class="hover:text-cyan-600 hover:font-semibold text-xl transition-colors"
+              >About</a
+            >
+            <a
+              href="#"
+              class="hover:text-cyan-600 hover:font-semibold text-xl transition-colors"
+              >Service</a
+            >
+            <a
+              href="#"
+              class="hover:text-cyan-600 hover:font-semibold text-xl transition-colors"
+              >Contact</a
+            >
+          </div>
+
+          <div class="flex justify-center items-center text-center rounded-xl">
+            <a
+              class="text-sm sm:text-base text-cyan-600 bg-white hover:bg-cyan-600 hover:text-white font-semibold px-4 py-2 rounded-xl shadow-xs transition-all duration-200"
+              href="../index.html"
+            >
+              เปิดใช้งานแอป
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section
+        class="Hero-section flex flex-col justify-center items-center pt-20 pb-28 px-4 relative z-10"
+      >
+        <div class="max-w-4xl text-center">
+          <h1
+            class="text-3xl sm:text-6xl font-bold text-white tracking-tight mb-3 drop-shadow-md"
+          >
+            Privacy Policy
+          </h1>
+          <p class="text-base sm:text-lg text-slate-100 font-light">
+            How we Collect, Use, and Protect Your Information
+          </p>
+        </div>
+      </section>
+
+      <div class="absolute bottom-0 left-0 w-full h-12 z-10"></div>
+      <!-- bg-gradient-to-t from-slate-50 to-transparent -->
+    </div>
+
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col lg:flex-row gap-12"
+    >
+      <aside class="hidden w-full lg:w-64 shrink-0">
+        <div
+          class="sticky top-28 p-5 border border-slate-200 rounded-2xl shadow-sm bg-white"
+        >
+          <h3
+            class="font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4 flex items-center gap-2"
+          >
+            <span class="w-1.5 h-5 bg-cyan-600 rounded-full"></span>
+            สารบัญเนื้อหา
+          </h3>
+
+          <nav class="flex flex-col text-sm space-y-1">
+            <a
+              href="#s1"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >ข้อมูลส่วนบุคคลที่เราเก็บรวบรวม</a
+            >
+            <a
+              href="#s2"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >การเข้าถึงอุปกรณ์และสิทธิ์การอนุญาต</a
+            >
+            <a
+              href="#s3"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >วัตถุประสงค์ในการใช้ข้อมูล</a
+            >
+            <a
+              href="#s3-1"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >ฐานทางกฎหมายในการประมวลผลข้อมูล</a
+            >
+            <a
+              href="#s4"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >Cookies และเทคโนโลยีติดตามข้อมูล</a
+            >
+            <a
+              href="#s5"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >การเปิดเผยข้อมูลแก่บุคคลที่สาม</a
+            >
+            <a
+              href="#s5-1"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >การโอนข้อมูลไปต่างประเทศ</a
+            >
+            <a
+              href="#s6"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >มาตรการรักษาความปลอดภัยของข้อมูล</a
+            >
+            <a
+              href="#s7"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >ระยะเวลาในการจัดเก็บข้อมูล</a
+            >
+            <a
+              href="#s8"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >สิทธิ์ของเจ้าของข้อมูลส่วนบุคคล</a
+            >
+            <a
+              href="#s9"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >ความเป็นส่วนตัวของผู้เยาว์</a
+            >
+            <a
+              href="#s10"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >การเปลี่ยนแปลงนโยบายความเป็นส่วนตัว</a
+            >
+            <a
+              href="#s11"
+              class="toc-link block py-2 border-l-2 border-transparent pl-3 text-slate-500 hover:text-cyan-600 transition-all duration-200"
+              >ติดต่อเรา</a
+            >
+          </nav>
+        </div>
+      </aside>
+
+      <main class="flex-1 max-w-3xl mx-auto lg:max-w-none space-y-12">
+        <header class="text-center lg:text-left pb-6 border-b border-slate-200">
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-2">
+            นโยบายความเป็นส่วนตัว
+          </h1>
+          <p class="text-lg font-medium text-slate-600">แอปพลิเคชัน Morjung</p>
+          <p class="text-sm text-slate-400 mt-1">
+            อัปเดตล่าสุด: 19 พฤษภาคม 2026
+          </p>
+        </header>
+
+        <div class="text-base text-slate-600 leading-relaxed space-y-4">
+          <p>
+            <strong>Morjung</strong>
+            ให้ความสำคัญกับความเป็นส่วนตัวและความปลอดภัยของข้อมูลส่วนบุคคลของผู้ใช้งาน
+            นโยบายฉบับนี้อธิบายถึงแนวทางในการเก็บรวบรวม ใช้งาน เปิดเผย
+            และปกป้องข้อมูลส่วนบุคคลของคุณ
+            เพื่อให้สอดคล้องกับพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562
+            (PDPA)
+          </p>
+          <p>
+            การเข้าใช้งานแอปพลิเคชัน Morjung
+            ถือว่าคุณรับทราบและยอมรับแนวทางปฏิบัติตามนโยบายฉบับนี้
+          </p>
+        </div>
+
+        <div
+          class="space-y-10 bg-white p-6 sm:p-10 border border-slate-200 rounded-2xl shadow-xs"
+        >
+          <section id="s1" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-3">
+              ข้อมูลส่วนบุคคลที่เราเก็บรวบรวม
+            </h2>
+            <p class="text-base text-slate-500 mb-4">
+              เราเก็บรวบรวมข้อมูลส่วนบุคคลเท่าที่จำเป็นต่อการให้บริการ
+              การพัฒนาแพลตฟอร์ม และการยกระดับประสบการณ์การใช้งานของผู้ใช้
+            </p>
+
+            <div class="space-y-4">
+              <div
+                class="bg-slate-50 p-5 border border-slate-100 rounded-xl shadow-2xs"
+              >
+                <h3 class="text-base font-semibold text-slate-800 mb-2">
+                  1.1 ข้อมูลบัญชีผู้ใช้งาน
+                </h3>
+                <ul
+                  class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+                >
+                  <li>ชื่อผู้ใช้งาน (Username)</li>
+                  <li>ที่อยู่อีเมล (Email Address)</li>
+                  <li>รูปโปรไฟล์</li>
+                  <li>ข้อมูลการเข้าสู่ระบบและการยืนยันตัวตน</li>
+                </ul>
+              </div>
+
+              <div
+                class="bg-slate-50 p-5 border border-slate-100 rounded-xl shadow-2xs"
+              >
+                <h3 class="text-base font-semibold text-slate-800 mb-2">
+                  1.2 ข้อมูลตำแหน่ง
+                </h3>
+                <p class="text-sm text-slate-500 mb-3">
+                  Morjung
+                  เป็นแพลตฟอร์มที่ใช้ระบบการเช็กอินตามตำแหน่งจริงของผู้ใช้งาน
+                </p>
+                <ul
+                  class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+                >
+                  <li>ข้อมูล GPS แบบ Real-time</li>
+                  <li>ข้อมูลตำแหน่งโดยประมาณจาก IP Address หรือเครือข่าย</li>
+                  <li>ประวัติการเช็กอิน</li>
+                  <li>สถานที่ที่ผู้ใช้บันทึกหรือกดถูกใจ</li>
+                  <li>ข้อมูลการใช้งานแผนที่ภายในแอปพลิเคชัน</li>
+                </ul>
+              </div>
+
+              <div
+                class="bg-slate-50 p-5 border border-slate-100 rounded-xl shadow-2xs"
+              >
+                <h3 class="text-base font-semibold text-slate-800 mb-2">
+                  1.3 เนื้อหาที่ผู้ใช้สร้างขึ้น
+                </h3>
+                <ul
+                  class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1 mb-3"
+                >
+                  <li>รูปภาพ</li>
+                  <li>วิดีโอ</li>
+                  <li>รีวิว</li>
+                  <li>ความคิดเห็น</li>
+                  <li>โพสต์หรือข้อมูลสถานที่</li>
+                </ul>
+                <p
+                  class="text-sm text-cyan-700 bg-cyan-50/50 p-3 rounded-lg border border-cyan-100/70"
+                >
+                  ผู้ใช้ยังคงเป็นเจ้าของลิขสิทธิ์ในเนื้อหาที่ตนอัปโหลด
+                  อย่างไรก็ตาม
+                  การเผยแพร่เนื้อหาผ่านแพลตฟอร์มถือว่าคุณอนุญาตให้ระบบสามารถแสดงผล
+                  จัดเก็บ และประมวลผลข้อมูลดังกล่าวเพื่อการให้บริการ <br />*
+                  Morjung ขอสงวนสิทธิ์ในการลบ ระงับ
+                  หรือจำกัดการเข้าถึงเนื้อหาที่ขัดต่อกฎหมาย นโยบายชุมชน
+                  หรือสร้างผลกระทบต่อผู้ใช้งานรายอื่น
+                </p>
+              </div>
+
+              <div
+                class="bg-slate-50 p-5 border border-slate-100 rounded-xl shadow-2xs"
+              >
+                <h3 class="text-base font-semibold text-slate-800 mb-2">
+                  1.4 ข้อมูลทางเทคนิคและการใช้งาน
+                </h3>
+                <ul
+                  class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1 mb-3"
+                >
+                  <li>IP Address / ประเภทอุปกรณ์และระบบปฏิบัติการ</li>
+                  <li>ประเภทเบราว์เซอร์ / ภาษา / เวลาในการเข้าใช้งาน</li>
+                  <li>พฤติกรรมการใช้งานภายในระบบ / Cookies และ Session Data</li>
+                  <li>Log การใช้งานระบบและบันทึกเหตุการณ์ (Log Data)</li>
+                </ul>
+                <p class="text-base text-slate-500 mb-4">
+                  ข้อมูลดังกล่าวช่วยให้เราสามารถวิเคราะห์ ปรับปรุง
+                  และรักษาความปลอดภัยของระบบได้ดียิ่งขึ้น
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="s2" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">
+              การเข้าถึงอุปกรณ์และสิทธิ์การอนุญาต
+            </h2>
+            <p class="text-base text-slate-500 mb-4">
+              เพื่อให้แอปพลิเคชันสามารถทำงานได้อย่างสมบูรณ์
+              เราอาจร้องขอสิทธิ์ในการเข้าถึงฟังก์ชันบางส่วนของอุปกรณ์ของคุณ
+            </p>
+            <div
+              class="bg-slate-50 p-5 border border-slate-100 rounded-xl mb-3"
+            >
+              <h3 class="text-base font-semibold text-slate-800 mb-2">
+                2.1 การเข้าถึงตำแหน่ง
+              </h3>
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+              >
+                <li>ตรวจสอบการเช็กอิน ณ สถานที่จริง</li>
+                <li>แสดงแผนที่และสถานที่ใกล้เคียง</li>
+                <li>ปรับปรุงคำแนะนำการใช้งาน</li>
+              </ul>
+            </div>
+            <div
+              class="bg-slate-50 p-5 border border-slate-100 rounded-xl mb-3"
+            >
+              <h3 class="text-base font-semibold text-slate-800 mb-2">
+                2.2 การเข้าถึงกล้อง
+              </h3>
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+              >
+                <li>ถ่ายรูปหรือวิดีโอเพื่อสร้างโพสต์</li>
+                <li>อัปโหลดคอนเทนต์เข้าสู่แพลตฟอร์ม</li>
+              </ul>
+            </div>
+            <div
+              class="bg-slate-50 p-5 border border-slate-100 rounded-xl mb-3"
+            >
+              <h3 class="text-base font-semibold text-slate-800 mb-2">
+                2.3 การเข้าถึงรูปภาพและไฟล์
+              </h3>
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+              >
+                <li>เลือกรูปภาพหรือวิดีโอจากอุปกรณ์</li>
+                <li>บันทึกหรือจัดเก็บสื่อที่เกี่ยวข้องกับการใช้งาน</li>
+              </ul>
+              <p class="text-base text-slate-500 mb-4">
+                ผู้ใช้สามารถจัดการหรือเพิกถอนสิทธิ์เหล่านี้ได้ผ่านการตั้งค่าของอุปกรณ์ตลอดเวลา
+              </p>
+            </div>
+          </section>
+
+          <section id="s3" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              วัตถุประสงค์ในการใช้ข้อมูล
+            </h2>
+            <div class="bg-slate-50 p-5 border border-slate-100 rounded-xl">
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1.5"
+              >
+                <li>
+                  เพื่อสร้างและจัดการบัญชีผู้ใช้งาน และยืนยันตัวตนการเข้าสู่ระบบ
+                </li>
+                <li>
+                  เพื่อให้บริการฟังก์ชันเช็กอิน แผนที่ แสดงผลโพสต์และคอนเทนต์
+                </li>
+                <li>
+                  เพื่อวิเคราะห์ ปรับปรุงระบบ
+                  และป้องกันการทุจริตหรือการใช้งานผิดปกติ
+                </li>
+                <li>
+                  เพื่อส่งข้อมูล ข่าวสาร หรือการแจ้งเตือนจากระบบ
+                  และปฏิบัติตามกฎหมาย
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section
+            id="s3-1"
+            class="scroll-mt-24 border-b border-slate-100 pb-8"
+          >
+            <h2 class="text-2xl font-bold text-slate-900 mb-3">
+              ฐานทางกฎหมายในการประมวลผลข้อมูล
+            </h2>
+            <p class="text-base text-slate-500 mb-4">
+              เราประมวลผลข้อมูลส่วนบุคคลภายใต้ฐานทางกฎหมายที่เหมาะสมตาม PDPA
+              เช่น
+            </p>
+            <div class="bg-slate-50 p-5 border border-slate-100 rounded-xl">
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+              >
+                <li>
+                  ความยินยอมของผู้ใช้งาน (Consent) / การปฏิบัติตามสัญญา
+                  (Contract)
+                </li>
+                <li>
+                  ประโยชน์โดยชอบด้วยกฎหมาย (Legitimate Interest) /
+                  การปฏิบัติตามกฎหมาย (Legal Obligation)
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="s4" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              Cookies และเทคโนโลยีติดตามข้อมูล
+            </h2>
+
+            <div class="bg-slate-50 p-5 border border-slate-100 rounded-xl">
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1 mb-2"
+              >
+                <li>จดจำสถานะการเข้าสู่ระบบและบันทึกการตั้งค่าผู้ใช้งาน</li>
+                <li>
+                  วิเคราะห์ประสิทธิภาพของระบบและปรับปรุงประสบการณ์การใช้งาน
+                </li>
+              </ul>
+              <p
+                class="text-sm text-cyan-700 bg-cyan-50/50 p-3 rounded-lg border border-cyan-100/70"
+              >
+                ผู้ใช้สามารถปฏิเสธหรือลบ Cookies
+                ได้ผ่านการตั้งค่าเบราว์เซอร์ของตนเอง อย่างไรก็ตาม การปิดใช้งาน
+                Cookies
+                บางประเภทอาจส่งผลให้บางฟังก์ชันของเว็บไซต์ทำงานได้ไม่สมบูรณ์
+              </p>
+            </div>
+          </section>
+
+          <section id="s5" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              การเปิดเผยข้อมูลแก่บุคคลที่สาม
+            </h2>
+            <p class="text-base text-slate-500 mb-4">
+              เรามีนโยบายไม่ขาย ให้เช่า
+              หรือเปิดเผยข้อมูลส่วนบุคคลของคุณแก่บุคคลภายนอกเพื่อวัตถุประสงค์ทางการตลาด
+              อย่างไรก็ตาม เราอาจเปิดเผยข้อมูลในกรณีดังต่อไปนี้
+            </p>
+            <div class="space-y-4">
+              <div class="bg-slate-50 p-5 border border-slate-100 rounded-xl">
+                <ul
+                  class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+                >
+                  <li>
+                    ผู้ให้บริการ Cloud Infrastructure และบริการวิเคราะห์ข้อมูล
+                  </li>
+                  <li>
+                    ผู้ให้บริการแผนที่และระบบ Location /
+                    หน่วยงานรัฐตามที่กฎหมายกำหนด
+                  </li>
+                </ul>
+              </div>
+              <div class="bg-slate-50 p-5 border border-slate-100 rounded-xl">
+                <h3 class="text-base font-semibold text-slate-800 mb-2">
+                  ผู้ให้บริการภายนอกที่เราใช้งาน
+                </h3>
+                <ul
+                  class="list-none pl-0 text-sm sm:text-base text-slate-600 flex flex-wrap gap-3"
+                >
+                  <li
+                    class="bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                  >
+                    Firebase
+                  </li>
+                  <li
+                    class="bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                  >
+                    Google Analytics
+                  </li>
+                  <li
+                    class="bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                  >
+                    Google Maps API
+                  </li>
+                  <li
+                    class="bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                  >
+                    Cloudinary
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="s5-1"
+            class="scroll-mt-24 border-b border-slate-100 pb-8"
+          >
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              การโอนข้อมูลไปต่างประเทศ
+            </h2>
+            <div class="bg-slate-50 p-5 border border-slate-100 rounded-xl">
+              <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                ข้อมูลบางส่วนอาจถูกจัดเก็บหรือประมวลผลบนเซิร์ฟเวอร์ของผู้ให้บริการภายนอกในต่างประเทศ
+                เช่น Google Firebase หรือ Cloudinary
+                ซึ่งมีมาตรการคุ้มครองข้อมูลตามมาตรฐานสากล
+              </p>
+            </div>
+          </section>
+
+          <section id="s6" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              มาตรการรักษาความปลอดภัยของข้อมูล
+            </h2>
+            <div class="bg-slate-50 p-5 border border-slate-100 rounded-xl">
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+              >
+                <li>
+                  การเข้ารหัสข้อมูล (Encryption) และการควบคุมสิทธิ์การเข้าถึง
+                </li>
+                <li>Secure Authentication และการตรวจสอบความปลอดภัยของระบบ</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="s7" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              ระยะเวลาในการจัดเก็บข้อมูล
+            </h2>
+            <div
+              class="bg-slate-50 p-5 border border-slate-100 rounded-xl space-y-3"
+            >
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+              >
+                <li>ข้อมูลบัญชีจะถูกเก็บตราบเท่าที่บัญชียังใช้งานอยู่</li>
+                <li>
+                  ข้อมูล Cookies / Log
+                  ข้อมูลสำรองจะถูกเก็บตามรอบและระยะเวลาของระบบ
+                </li>
+              </ul>
+              <p
+                class="text-sm text-cyan-700 bg-cyan-50/50 p-3 rounded-lg border border-cyan-100/70"
+              >
+                หากผู้ใช้งานร้องขอลบบัญชี
+                ข้อมูลส่วนบุคคลจะถูกลบหรือทำให้ไม่สามารถระบุตัวตนได้ภายในระยะเวลาที่เหมาะสม
+                เว้นแต่มีเหตุจำเป็นเพื่อปฏิบัติตามกฎหมาย
+                หรือเพื่อความปลอดภัยของระบบ
+              </p>
+              <!-- <p
+                class="text-sm sm:text-base text-slate-600 leading-relaxed pt-2 border-t border-slate-200/60"
+              >
+                หากผู้ใช้งานร้องขอลบบัญชี
+                ข้อมูลส่วนบุคคลจะถูกลบหรือทำให้ไม่สามารถระบุตัวตนได้ภายในระยะเวลาที่เหมาะสม
+                เว้นแต่มีเหตุจำเป็นเพื่อปฏิบัติตามกฎหมาย
+                หรือเพื่อความปลอดภัยของระบบ
+              </p> -->
+            </div>
+          </section>
+
+          <section id="s8" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              สิทธิ์ของเจ้าของข้อมูลส่วนบุคคล
+            </h2>
+            <div
+              class="bg-slate-50 p-5 border border-slate-100 rounded-xl space-y-4"
+            >
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 grid grid-cols-1 sm:grid-cols-2 gap-1"
+              >
+                <li>สิทธิ์ในการเข้าถึงและขอรับสำเนาข้อมูล</li>
+                <li>สิทธิ์ในการแก้ไขข้อมูลให้ถูกต้อง</li>
+                <li>สิทธิ์ในการคัดค้านการประมวลผล</li>
+                <li>สิทธิ์ในการถอนความยินยอม</li>
+                <li>สิทธิ์ในการขอให้ลบหรือทำลายข้อมูล</li>
+                <li>สิทธิ์ในการระงับการใช้ข้อมูล</li>
+              </ul>
+              <p
+                class="text-sm text-cyan-700 bg-cyan-50/50 p-3 rounded-lg border border-cyan-100/70"
+              >
+                ผู้ใช้งานสามารถยื่นคำร้องเพื่อใช้สิทธิ์เกี่ยวกับข้อมูลส่วนบุคคลได้ผ่านอีเมล
+                <span class="underline font-semibold">support@morjung.com</span>
+                โดยเราจะดำเนินการภายในระยะเวลาที่กฎหมายกำหนด
+              </p>
+            </div>
+          </section>
+
+          <section id="s9" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-3">
+              ความเป็นส่วนตัวของผู้เยาว์
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600">
+              Morjung ไม่ได้มีวัตถุประสงค์ในการเก็บข้อมูลจากเด็กอายุต่ำกว่า 13
+              ปีโดยไม่มีความยินยอมจากผู้ปกครองอย่างถูกต้องตามแนวทางปฏิบัติ หากเราพบว่ามีการเก็บข้อมูลของผู้เยาว์โดยไม่เหมาะสม เราจะดำเนินการลบข้อมูลดังกล่าวโดยเร็วที่สุด
+            </p>
+          </section>
+
+          <section id="s10" class="scroll-mt-24 border-b border-slate-100 pb-8">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              การเปลี่ยนแปลงนโยบายความเป็นส่วนตัว
+            </h2>
+            <div class="bg-slate-50 p-5 border border-slate-100 rounded-xl">
+              <ul
+                class="list-disc pl-5 text-sm sm:text-base text-slate-600 space-y-1"
+              >
+                <li>การเปลี่ยนแปลงของบริการ </li>
+
+                <li>การเปลี่ยนแปลงทางกฎหมาย</li>
+                <li>การปรับปรุงด้านความปลอดภัย</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="s11" class="scroll-mt-24">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              ช่องทางการติดต่อ
+            </h2>
+            <div
+              class="bg-slate-50 p-5 border border-slate-100 rounded-xl space-y-2"
+            >
+              <p class="text-base font-semibold text-slate-800">
+                ทีมพัฒนา Morjung
+              </p>
+              <p class="text-sm sm:text-base text-slate-600">
+                อีเมล: support@morjung.com
+              </p>
+              <p
+                class="text-sm sm:text-base text-slate-500 pt-2 border-t border-slate-200/60"
+              >
+                Morjung ทำหน้าที่เป็นผู้ควบคุมข้อมูลส่วนบุคคล (Data Controller)
+                ภายใต้พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562
+              </p>
+              <p class="text-xs text-slate-400 mt-4 block">
+                นโยบายนี้มีผลบังคับใช้ตั้งแต่วันที่ 19 พฤษภาคม 2026
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer
+      class="bg-slate-900 text-slate-400 text-sm px-6 py-12 border-t border-slate-800 text-center space-y-4"
+    >
+      <p>© 2026 Morjung. All rights reserved.</p>
+      <div class="flex justify-center gap-6 text-xs">
+        <a href="#" class="hover:text-cyan-500 transition-colors">Help</a>
+        <a href="#" class="hover:text-cyan-500 transition-colors"
+          >Terms of Use</a
+        >
+        <a href="#" class="hover:text-cyan-500 transition-colors"
+          >Privacy Policy</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const tocLinks = document.querySelectorAll(".toc-link");
+
+        const sections = Array.from(tocLinks)
+          .map((link) => {
+            const id = link.getAttribute("href");
+            return document.querySelector(id);
+          })
+          .filter((section) => section !== null);
+
+        const observerOptions = {
+          root: null,
+          rootMargin: "-20% 0px -60% 0px", // ปรับระยะสายตาเล็กน้อยเพื่อให้เข้าล็อกตอนสกรอลล์ได้เป็นธรรมชาติขึ้น
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute("id");
+
+              tocLinks.forEach((link) => {
+                if (link.getAttribute("href") === `#${id}`) {
+                  link.classList.remove("text-slate-500", "border-transparent");
+                  link.classList.add(
+                    "text-cyan-600",
+                    "font-semibold",
+                    "border-cyan-600",
+                  );
+                } else {
+                  link.classList.remove(
+                    "text-cyan-600",
+                    "font-semibold",
+                    "border-cyan-600",
+                  );
+                  link.classList.add("text-slate-500", "border-transparent");
+                }
+              });
+            }
+          });
+        }, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+      });
+    </script>
+  </body>
+</html>
